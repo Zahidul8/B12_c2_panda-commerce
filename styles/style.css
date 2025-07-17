@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
-   
+
 }
 
 .inter {
@@ -32,7 +32,7 @@ body {
     color: white;
     font-family: "Inter", sans-serif;
     cursor: pointer;
-   
+
 }
 
 
@@ -84,11 +84,11 @@ nav .navbar {
     gap: 24px;
 }
 
-nav > ul li {
+nav>ul li {
     list-style: none;
 }
 
-nav > ul li a {
+nav>ul li a {
     text-decoration: none;
 }
 
@@ -112,10 +112,11 @@ nav > ul li a {
     visibility: visible;
 }
 
-.products-item li  a {
-    padding:5px 10px;
+.products-item li a {
+    padding: 5px 10px;
 
 }
+
 /* .products-item li a:hover {
     background-color: rgb(236, 241, 241);
     color: rgb(5, 0, 0);
@@ -160,35 +161,38 @@ nav > ul li a {
 .banner-btn {
     background-image: linear-gradient(#FF589B, #FF136F);
 }
+
 .banner-btn:hover {
     border: 2px solid #FF136F;
-    background: transparent ;
+    background: transparent;
     color: #FF136F;
-  
+
 }
 
 .banner-section img {
     max-width: 400px;
     height: 378px;
 }
-
+main {
+    padding: 0 10px;
+}
 /* catagory section start  */
 .catagory {
     max-width: 1128px;
     margin: auto;
     margin-top: 64px;
-    padding-bottom: 52px;
+    padding: 0 10px 52px ;
 }
 
 .catagory-heading {
     font-size: 36px;
-    font-weight:500 ;
+    font-weight: 500;
     margin-bottom: 24px;
 }
 
 .catagory-items {
     display: flex;
-     gap: 26px;
+    gap: 26px;
 }
 
 .item {
@@ -202,13 +206,16 @@ nav > ul li a {
 }
 
 .item img {
-    width: 100px;;
+    width: 100px;
+    ;
 }
+
 .item2 {
     background-image: linear-gradient(to right, #FF589B, #FF136F);
 }
+
 .item3 {
-    background-image: linear-gradient(to right, #4289FF,#3F07F8);
+    background-image: linear-gradient(to right, #4289FF, #3F07F8);
 }
 
 .name {
@@ -229,32 +236,33 @@ main section {
 }
 
 .shoes-section {
-      max-width: 1128px;
+    max-width: 1128px;
     margin: auto;
-    padding-top: 46px ;
+    padding-top: 46px;
 }
 
 .headings {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
-        
+
 }
 
 .product-name {
-    font-size:36px ;
+    font-size: 36px;
     font-weight: 600;
 }
+
 .see-all {
-    font-size:20px;
+    font-size: 20px;
     font-weight: 500;
     color: #FF9D00;
     text-decoration: none;
 }
 
 .card-container {
-display: flex;
-gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .cards {
@@ -262,12 +270,15 @@ gap: 24px;
     background-color: white;
     padding: 24px 26px;
     border-radius: 20px;
+    flex: 1;
 
 }
+
 .cards img {
-    max-width: 290px;
+   width: 100%;
     height: auto;
 }
+
 .shoe-title {
     color: #1F1F1F;
     font-size: 24px;
@@ -278,6 +289,7 @@ gap: 24px;
 .shoe-desc {
     margin: 16px 0;
 }
+
 .prices {
     font-size: 24px;
     font-weight: 500;
@@ -287,6 +299,7 @@ gap: 24px;
 .shoe-btn {
     background-color: black;
 }
+
 .shoe-btn:hover {
     background-color: transparent;
     color: black;
@@ -297,6 +310,7 @@ gap: 24px;
 footer {
     padding: 75px 0;
 }
+
 .footer-content {
     max-width: 1210px;
     margin: auto;
@@ -311,33 +325,194 @@ footer {
 .contacts {
     text-align: center;
 }
+
 .contact-title {
     font-size: 30px;
     font-weight: 600;
     color: #1F1F1F;
 }
+
 .contact-desc {
     margin: 4px 0 16px;
 }
 
 input[type="email"] {
-    padding:  22px 35px 15px;
+    padding: 22px 35px 15px;
     font-size: 24px;
     border: none;
     border-radius: 6px 0 0 6px;
     width: 500px;
 }
+
 ::placeholder {
     font-size: 24px;
 }
 
 input[type="submit"] {
-    padding:  22px 35px 15px;
+    padding: 22px 35px 15px;
     font-size: 24px;
     border: none;
-    background-image: linear-gradient( #FF589B,#FF136F) ;
+    background-image: linear-gradient(#FF589B, #FF136F);
     color: white;
     border-radius: 0 6px 6px 0;
     margin-left: -5px;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    .banner-section,
+    .catagory-items,
+    .card-container {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+        gap: 10px;
+    }
+
+    .search-field input {
+        width: 100%;
+    }
+
+    nav .navbar {
+        justify-content: center;
+    }
+
+    
+    .catagory-items {
+        height: auto;
+        padding: 0 10px;
+    }
+    .banner-section {
+        gap: 20px;
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .catagory-heading {
+        padding-left: 10px;
+    }
+
+    .banner-desc {
+        padding: 0;
+    }
+
+    .banner-section img {
+        width: 100%;
+    }
+
+    .search-field {
+        width: 80%;
+        margin: auto;
+    }
+
+    .banner-heading {
+        font-size: 2.75rem;
+    }
+
+    .shoes-section {
+        padding: 45px 10px 0;
+    }
+    .input-fields {
+        padding: 0 10px;
+    }
+    input[type="email"] {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    input[type="submit"] {
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .footer-content {
+        height: auto;
+        padding: 50px 0;
+        border-radius: 0;
+    }
+    .cards img {
+        max-width: 290px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:990px) {
+
+    nav,
+    .catagory-items,
+    .card-container {
+        flex-direction: column;
+    }
+
+    .search-field input {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .search-field {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav .navbar {
+        justify-content: center;
+    }
+
+    .banner-section,
+    .catagory-items {
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner-desc {
+        padding: 0;
+    }
+
+    .banner-section img {
+        width: 100%;
+    }
+
+    .banner-desc {
+        text-align: justify;
+    }
+
+    .banner-heading {
+        font-size: 2.75rem;
+    }
+
+    .catagory-heading {
+        padding-left: 20px;
+    }
+
+    .shoes-section {
+        padding: 45px 20px 0;
+    }
+      .input-fields {
+        padding: 0 10px;
+    }
+    input[type="email"] {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    input[type="submit"] {
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+       .footer-content {
+        border-radius: 0;
+    }
+     .cards img {
+        max-width: 290px;
+    }
 }
